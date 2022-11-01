@@ -1,0 +1,47 @@
+@mixin tablet{
+  @media (max-width: 920px) {
+    @content
+  }
+}
+footer {
+  .container{
+    @include tablet{
+      flex-wrap: wrap;
+    }
+  }
+  a {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+
+    &:hover {
+      color: #8face1;
+    }
+  }
+  h3{
+    color: white;
+    font-size: 20px;
+  }
+  ul {
+    margin-right: 10px;
+    padding: 0;
+    list-style: none;
+    li{
+      margin-bottom: 20px;
+    }
+  }
+
+  padding: 40px;
+  background-color: #032541;
+
+  .footer_logo {
+    max-width: 154px;
+    overflow: hidden;
+    margin-right: 30px;
+
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+}

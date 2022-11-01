@@ -27,6 +27,7 @@
     "webpack-dotenv-plugin": "^2.1.0"
   },
   "dependencies": {
+    "normalize-scss": "^7.0.1",
     "normalize.css": "^8.0.1"
   }
 }

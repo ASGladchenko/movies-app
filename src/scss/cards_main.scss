@@ -1,0 +1,25 @@
+.cards{
+  overflow-x: scroll;
+}
+.card__main{
+  position: relative;
+  padding: 10px;
+  .card__main_rate{
+    padding: 5px;
+    background-color: lightgrey;
+    position: absolute;
+    top:12px;
+    right: 13px;
+    span{
+      font-size: 18px;
+    }
+    p{
+      margin: 0;
+      font-size: 15px;
+    }
+  }
+  h5{
+    margin:10px 0;
+    font-size: 18px;
+  }
+}

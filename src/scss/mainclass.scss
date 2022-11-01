@@ -1,0 +1,39 @@
+@mixin tablet{
+  @media (max-width: 920px) {
+      @content
+  }
+}
+.container{
+  max-width: 1200px;
+  margin: auto;
+}
+.flex{
+  display: flex;
+}
+.align-center{
+  align-items: center;
+}
+.justify-between{
+  justify-content: space-between ;
+}
+.justify-center{
+  justify-content: center ;
+}
+.justify-evenly{
+  justify-content: space-evenly;
+}
+.w-100{
+  width: 100%;
+}
+.d-block{
+  display: block;
+}
+.text-center{
+  text-align: center;
+}
+.wrap{
+  flex-wrap: wrap;
+}
+.no-wrap{
+  flex-wrap: nowrap;
+}
