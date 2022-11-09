@@ -1,0 +1,20 @@
+@mixin width1100{
+  @media (max-width: 1100px) {
+    @content
+  }
+}
+@mixin width890{
+  @media (max-width: 890px) {
+    @content
+  }
+}
+@mixin width700{
+  @media (max-width: 700px) {
+    @content
+  }
+}
+@mixin width600{
+  @media (max-width: 600px) {
+    @content
+  }
+}

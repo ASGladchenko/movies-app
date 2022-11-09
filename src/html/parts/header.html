@@ -10,7 +10,7 @@
 </head>
 <body>
 <header>
-    <div class="container flex justify-between">
+    <div class="container flex justify-between wrap">
         <nav class="header__nav flex align-center">
             <div class="header__nav_logo">
                 <a href="index.html">
@@ -29,8 +29,12 @@
             <li><a href="#"></a> <span class="header__primary_language">RU</span></li>
             <li><a href="#"><span class="header__primary_message"><i class="fa-solid fa-bell"></i></span></a></li>
             <li><a href="#"></a> <span class="header__primary_user-login"> Login</span></li>
-            <li><a href="#"></a> <span class="header__primary_search"><i
-                    class="fa-sharp fa-solid fa-magnifying-glass"></i></span></li>
         </ul>
+        <div class="header__search  w-100">
+            <form action="#" id="header__search_form">
+                <input  id="header__search_input" class="header__primary_search text-center" type="text" placeholder="Search ...">
+                <button >SEARCH</button>
+            </form>
+        </div>
     </div>
 </header>

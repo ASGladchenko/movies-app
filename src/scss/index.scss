@@ -1,9 +1,16 @@
 @import "~normalize.css";
-@import "mainclass.css";
+@import "mainclass.scss";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,500&display=swap');
 @import "header.scss";
-@import "cards_main.css";
+@import "cards_main.scss";
+@import "details.scss";
+@import "mixin.scss";
+@import "request.scss";
+a{
+  text-decoration: none;
+  color: black;
+}
 body{
   font-family: "Montserrat Alternates",sans-serif;
 }
-@import "footer.css";
+@import "footer.scss";

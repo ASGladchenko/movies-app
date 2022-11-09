@@ -1,12 +1,26 @@
-@mixin tablet{
-  @media (max-width: 920px) {
+@import "mixin.scss";
+@mixin width1100{
+  @media (max-width: 1100px) {
     @content
   }
 }
+
 footer {
   .container{
-    @include tablet{
+    @include width1100{
       flex-wrap: wrap;
+    }
+  }
+  .footer_nav{
+    @include width890{
+      flex-wrap: wrap;
+      .footer_nav__items{
+        text-align: center;
+        width: 100%;
+        li{
+          margin-bottom: 5px;
+        }
+      }
     }
   }
   a {
@@ -40,6 +54,7 @@ footer {
     margin-right: 30px;
 
     img {
+      margin: auto;
       display: block;
       width: 100%;
     }

@@ -1,17 +1,52 @@
+@import "mixin.scss";
 header {
+  @include width600{
+    height: 180px;
+    .justify-between{
+      justify-content: center;
+    }
+  }
   .container {
+    @include width600{
+      padding: 0;
+      flex-wrap: wrap;
+    }
     padding: 0 40px;
     width: 100%;
   }
+  form{
+    margin: auto;
+  }
+  .header__search{
+    form{
+     @include width600{
+       padding: 0 10px;
+     }
+      display: flex;
+      justify-content: space-between;
+    }
+    background-color: white;
+    button{
+      font-weight: bolder;
+    }
+  }
+  .header__primary_search {
+    cursor: pointer;
+    width: 100%;
 
+  }
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 64px;
+  height: 120px;
   background-color: #032541;
 
   .header__nav_menu {
     font-size: 16px;
+    @include width890{
+      display: none;
+    }
+
 
     a {
       font-weight: 600;
@@ -73,10 +108,7 @@ header {
         }
       }
     }
-    .header__primary_search {
-      cursor: pointer;
 
-    }
     .header__primary_user-login {
       cursor: pointer;
     }

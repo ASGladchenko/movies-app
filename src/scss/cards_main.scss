@@ -1,25 +1,36 @@
-.cards{
+.cards {
+  overflow: hidden;
   overflow-x: scroll;
+  padding: 0 10px;
 }
-.card__main{
+
+.card__main {
   position: relative;
   padding: 10px;
-  .card__main_rate{
+
+  img {
+    min-height: 300px;
+  }
+
+  .card__main_rate {
     padding: 5px;
     background-color: lightgrey;
     position: absolute;
-    top:12px;
+    top: 12px;
     right: 13px;
-    span{
+
+    span {
       font-size: 18px;
     }
-    p{
+
+    p {
       margin: 0;
       font-size: 15px;
     }
   }
-  h5{
-    margin:10px 0;
+
+  h5 {
+    margin: 10px 0;
     font-size: 18px;
   }
 }
